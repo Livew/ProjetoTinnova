@@ -1,4 +1,5 @@
 import Exercicio1.Votos;
+import Exercicio2.Bubble;
 import Exercicio3.Fatorial;
 import Exercicio4.Multiplo;
 
@@ -16,9 +17,16 @@ public class App {
         System.out.println(percentualBrancos+"% Votos brancos");
         System.out.println(percentualNulos+"% Votos nulos");
 
-        //Exercicio 2 - Bublble
-        
+        //Exercicio 2 - Bubble
+        int[] arrayDesordenado = {5, 3, 2, 4, 7, 1, 0, 6};
+        Bubble bubble = new Bubble(arrayDesordenado);
 
+        int[] arrayOrdenado = bubble.ordenarArray();
+
+        for (int num : arrayOrdenado){
+            System.out.println(num);
+        }
+        
         //Exercicio 3 - Fatorial
         Fatorial fatorial = new Fatorial(5);
 
